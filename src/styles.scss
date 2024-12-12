@@ -1,0 +1,44 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'aos/dist/aos.css';
+
+:root {
+  --primary-color: #C5A572;
+  --secondary-color: #2B4C6F;
+  --text-color: #333333;
+  --light-bg: #F8F9FA;
+  --dark-bg: #343A40;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  
+  &:hover {
+    background-color: darken(#C5A572, 10%);
+    border-color: darken(#C5A572, 10%);
+  }
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
